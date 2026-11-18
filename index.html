@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Ferme Sources de Vie · Miel du bocage normand</title>
+  <meta name="description" content="Miels bio et gourmands récoltés par George dans le bocage normand, à Saint-Pierre-des-Loges (Orne). Vente aux particuliers et aux revendeurs.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Nunito:wght@400;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=14">
+</head>
+<body>
+
+<header class="entete" id="haut">
+  <a href="#haut" class="entete-logo"><img src="img/logo.png" alt="Sources de Vie"><span>La Ferme<br><b>Sources de Vie</b></span></a>
+  <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="menu">
+    <a href="#ferme">La ferme</a>
+    <a href="#miels">Nos miels</a>
+    <a href="#particuliers">Tarifs</a>
+    <a href="#pros">Professionnels</a>
+    <a href="#contact" class="btn btn-petit">Nous contacter</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ACCUEIL -->
+  <section class="hero">
+    <div class="hero-texte">
+      <p class="script">Sources de Vie</p>
+      <h1>Le miel du bocage normand, récolté par George</h1>
+      <p class="chapo">Seize miels, pour la plupart bio, nés dans les forêts, les vergers et les prairies de l'Orne. Ici, on prend le temps de faire les choses bien, pour les abeilles comme pour vous.</p>
+
+      <div class="hero-boutons">
+        <a href="#miels" class="btn">Découvrir nos 16 miels</a>
+        <a href="#pros" class="btn btn-pro">Espace professionnels →</a>
+      </div>
+    </div>
+
+    <div class="hero-visuel">
+      <div class="hex-photo"><img src="img/george-pots.jpg" alt="George, apiculteur, derrière une rangée de pots de miel"></div>
+      <div class="pastille p1"><b>70</b><span>ruches</span></div>
+      <div class="pastille p2"><span>Miel</span><b>BIO</b></div>
+    </div>
+  </section>
+
+  <div class="coulure" aria-hidden="true"></div>
+
+  <!-- LA FERME -->
+  <section class="ferme section" id="ferme">
+    <div class="ferme-photos">
+      <img class="ph-grande" src="img/ruches-champ.jpg" alt="Ruches bleues et jaunes au milieu d'un champ">
+      <img class="ph-petite" src="img/ruches-visite.jpg" alt="Visite des ruches en tenue d'apiculteur">
+    </div>
+    <div class="ferme-texte">
+      <p class="script">Notre histoire</p>
+      <h2>Une petite ferme où la nature a toute sa place</h2>
+      <p>George s'est lancé dans l'apiculture en 2021. Aujourd'hui, il s'occupe de 70 ruches, installées à la ferme de Saint-Pierre-des-Loges et dans plusieurs coins du bocage normand : forêts, vergers et prairies.</p>
+      <p>Si la ferme s'appelle <em>Sources de Vie</em>, c'est parce que sa parcelle en est pleine : on y croise des chouettes, des chevreuils, des oiseaux de haies… et bien sûr des abeilles. George est d'abord un amoureux de la nature, et ça se goûte dans ses miels.</p>
+      <ul class="faits">
+        <li><b>2021</b><span>première récolte</span></li>
+        <li><b>70</b><span>ruches</span></li>
+        <li><b>16</b><span>miels différents</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- NOS MIELS -->
+  <section class="miels section" id="miels">
+    <div class="miels-entete">
+      <div class="polaroids gauche" id="photos-gauche" aria-hidden="true"></div>
+      <div class="titre-centre">
+        <p class="script">La gamme</p>
+        <h2>Nos miels</h2>
+        <p>Chaque miel raconte un coin de Normandie.<br>Tous existent en <b>250&nbsp;g</b>, <b>400&nbsp;g</b> et <b>1&nbsp;kg</b>.</p>
+      </div>
+      <div class="polaroids droite" id="photos-droite" aria-hidden="true"></div>
+    </div>
+
+    <div class="filtres" role="group" aria-label="Filtrer les miels">
+      <button class="filtre actif" data-filtre="tous">Tous</button>
+      <button class="filtre" data-filtre="bio">Bio</button>
+      <button class="filtre" data-filtre="doux">Doux</button>
+      <button class="filtre" data-filtre="corse">Corsés</button>
+      <button class="filtre" data-filtre="gourmand">Gourmands</button>
+    </div>
+
+    <div class="grille-miels" id="grille-miels"></div>
+
+    <p class="note-bio">Les miels marqués <span class="badge-bio">BIO</span> sont issus de l'agriculture biologique, certifiés par Ecocert.</p>
+  </section>
+
+  <!-- PARTICULIERS -->
+  <section class="particuliers section" id="particuliers">
+    <div class="titre-centre">
+      <p class="script">Pour vous</p>
+      <h2>Nos tarifs</h2>
+      <p>Pour commander, il suffit d'appeler George ou de lui écrire. La livraison est offerte.</p>
+    </div>
+
+    <div class="tarifs">
+      <div class="tarif">
+        <div class="tarif-pot" data-pot="petit"></div>
+        <h3>Pot de 250 g</h3>
+        <p class="prix" data-prix="pot250"></p>
+      </div>
+      <div class="tarif">
+        <div class="tarif-pot" data-pot="moyen"></div>
+        <h3>Pot de 400 g</h3>
+        <p class="prix" data-prix="pot400"></p>
+      </div>
+      <div class="tarif">
+        <div class="tarif-pot" data-pot="grand"></div>
+        <h3>Pot de 1 kg</h3>
+        <p class="prix" data-prix="pot1kg"></p>
+      </div>
+    </div>
+
+    <div class="petits-prix">
+      <div>
+        <p class="script">Les petits prix</p>
+        <h3>Colza &amp; Printemps</h3>
+        <p>Nos deux miels les plus doux, à prix réduit toute l'année.<br><b>Prix par pot</b>, au choix Colza ou Printemps.</p>
+      </div>
+      <ul>
+        <li><span>Pot 250 g</span><s data-prix="pot250"></s><b data-prix="promo250"></b></li>
+        <li><span>Pot 400 g</span><s data-prix="pot400"></s><b data-prix="promo400"></b></li>
+        <li><span>Pot 1 kg</span><s data-prix="pot1kg"></s><b data-prix="promo1kg"></b></li>
+      </ul>
+    </div>
+
+    <div class="extras">
+      <article class="extra">
+        <img src="img/coffret-ferme.jpg" alt="Coffret kraft de trois pots de miel sur une table de jardin">
+        <div class="extra-texte">
+          <h3>Le coffret découverte</h3>
+          <p>Trois pots de 250 g, avec les parfums de votre choix, présentés dans une jolie boîte en carton kraft. L'idée cadeau qui plaît à tout le monde.</p>
+          <p class="prix" data-prix="coffret"></p>
+        </div>
+      </article>
+      <article class="extra">
+        <img src="img/bougies.jpg" alt="Trois bougies jaunes en cire d'abeille dans des boîtes noires">
+        <div class="extra-texte">
+          <h3>La bougie en cire d'abeille</h3>
+          <p>Coulée avec la cire naturelle de nos ruches, dans une jolie boîte en métal. Parfaite pour le Réveillon ou la Saint-Valentin, et disponible toute l'année.</p>
+          <p class="prix" data-prix="bougie"></p>
+        </div>
+      </article>
+    </div>
+
+    <div class="infos-achat">
+      <div><span class="hex-ico">✓</span><p><b>Livraison offerte</b><br>Votre miel arrive chez vous, sans frais.</p></div>
+      <div><span class="hex-ico">✓</span><p><b>Une petite remise</b><br>à partir de 10 pots achetés.</p></div>
+    </div>
+
+    <div class="cta-centre">
+      <a href="#contact" class="btn">Commander mon miel</a>
+    </div>
+  </section>
+
+  <!-- BANDEAU PHOTOS -->
+  <div class="bandeau-photos" aria-hidden="true">
+    <img src="img/pot-paille.jpg" alt="">
+    <img src="img/pots-roses.jpg" alt="">
+    <img src="img/george-coffret.jpg" alt="">
+    <img src="img/pot-ronces.jpg" alt="">
+    <img src="img/pot-paille-2.jpg" alt="">
+  </div>
+
+  <!-- PROFESSIONNELS -->
+  <section class="pros section" id="pros">
+    <div class="pros-texte">
+      <p class="script">Professionnels</p>
+      <h2>Nos miels dans votre boutique</h2>
+      <p>Vous tenez une épicerie fine, une cave, un magasin de producteurs ou une boutique cadeaux&nbsp;? Nos miels plaisent à une clientèle qui cherche du local, du bio et une vraie histoire derrière le produit.</p>
+      <ul class="arguments">
+        <li><b>16 parfums</b>, du plus doux au plus corsé, et des miels gourmands</li>
+        <li><b>3 formats</b> pour chaque miel : 250 g, 400 g et 1 kg</li>
+        <li><b>La majorité de la gamme en bio</b>, certifiée Ecocert</li>
+        <li><b>Coffrets cadeaux</b> et <b>bougies</b> en cire d'abeille pour les fêtes</li>
+        <li><b>Livraison offerte</b> dans l'Orne et en Île-de-France</li>
+        <li>Un apiculteur joignable directement, qui connaît chacun de ses miels</li>
+      </ul>
+      <p class="sur-demande">Tarifs professionnels sur demande</p>
+      <a href="#contact" class="btn btn-clair">Demander les tarifs</a>
+    </div>
+    <div class="pros-photo">
+      <img src="img/gamme-pros.jpg" alt="Coffret et pots de miel posés sur une ruche dans un champ">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="titre-centre">
+      <p class="script">Commander, une question ?</p>
+      <h2>Contactez George</h2>
+      <p>Pour commander ou pour toute question, appelez George ou écrivez-lui. Il vous répond lui-même.</p>
+    </div>
+
+    <div class="contact-direct">
+      <a class="coord" data-lien="tel"><span>Par téléphone</span><b data-contact="telephone"></b><small>Appelez ou envoyez un SMS</small></a>
+      <a class="coord" data-lien="mail"><span>Par email</span><b data-contact="email"></b><small>Précisez les miels et les formats souhaités</small></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <img src="img/logo.png" alt="Sources de Vie" class="pied-logo">
+  <p><b>La Ferme Sources de Vie</b> · <span data-contact="adresse"></span>, <span data-contact="ville"></span></p>
+  <p><span data-contact="telephone"></span> · <span data-contact="email"></span></p>
+  <details class="mentions">
+    <summary>Mentions légales</summary>
+    <p><b>Éditeur du site</b> : La Ferme Sources de Vie, M. George Stoica, responsable d'exploitation agricole. <span data-contact="adresse"></span>, <span data-contact="ville"></span>. SIRET <span data-contact="siret"></span>. Tél. <span data-contact="telephone"></span>.</p>
+    <p><b>Directeur de la publication</b> : George Stoica.</p>
+    <p><b>Hébergement</b> : Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.</p>
+    <p><b>Données personnelles</b> : ce site ne dépose pas de cookies et ne collecte aucune donnée personnelle.</p>
+    <p><b>Photos</b> : La Ferme Sources de Vie. Toute reproduction est interdite sans autorisation.</p>
+  </details>
+  <p class="copyright">© <span id="annee"></span> La Ferme Sources de Vie</p>
+</footer>
+
+<script src="contenu.js?v=14"></script>
+<script src="icones.js?v=14"></script>
+<script src="app.js?v=14"></script>
+</body>
+</html>
